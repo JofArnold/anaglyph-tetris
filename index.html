@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetris</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div id="pickers">
+      <div class="row">
+        <label>Falling</label>
+        <div id="fallingColor" class="colorBox"></div>
+        <input id="hue1" type="range" step="1" min="0" max="260" value="180" />
+        <input id="sat1" type="range" step="1" min="0" max="100" value="50" />
+        <input id="lum1" type="range" step="1" min="0" max="100" value="50" />
+      </div>
+      <div class="row">
+        <label>Fixed</label>
+        <div id="fixedColor" class="colorBox"></div>
+        <input id="hue2" type="range" step="1" min="0" max="260" value="180" />
+        <input id="sat2" type="range" step="1" min="0" max="100" value="50" />
+        <input id="lum2" type="range" step="1" min="0" max="100" value="50" />
+      </div>
+    </div>
+    <div id="score"></div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <script src="src/index.js"></script>
+  </body>
+</html>
